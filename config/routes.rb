@@ -1,4 +1,6 @@
 MyParking::Application.routes.draw do
+  devise_for :users
+
   resources :parkings
   
   root :to => 'parkings#index'
